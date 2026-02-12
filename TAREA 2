@@ -1,0 +1,39 @@
+import math
+
+# 1. Solicitar 2 números
+num1 = float(input("Digite el primer número: "))
+num2 = float(input("Digite el segundo número: "))
+
+# 2. Sumar los dos números
+suma = num1 + num2
+print(f"La suma de {num1} + {num2} = {suma}")
+
+# 3. Restar los dos números
+resta = num1 - num2
+print(f"La resta de {num1} - {num2} = {resta}")
+
+# 4. Multiplicar los dos números
+multiplicacion = num1 * num2
+print(f"La multiplicación de {num1} * {num2} = {multiplicacion}")
+
+# 5. Dividir validando que el segundo no sea cero
+if num2 != 0:
+    division = num1 / num2
+    print(f"La división de {num1} / {num2} = {division}")
+else:
+    print("No se puede dividir entre 0.")
+
+# 6. Elevar a la quinta potencia cualquiera de los dos números
+print(f"{num1} elevado a la quinta potencia = {num1 ** 5}")
+print(f"{num2} elevado a la quinta potencia = {num2 ** 5}")
+
+# 7. Raíz cuadrada de los dos números
+if num1 >= 0:
+    print(f"La raíz cuadrada de {num1} = {math.sqrt(num1)}")
+else:
+    print(f"No se puede calcular la raíz cuadrada real de {num1} (es negativo).")
+
+if num2 >= 0:
+    print(f"La raíz cuadrada de {num2} = {math.sqrt(num2)}")
+else:
+    print(f"No se puede calcular la raíz cuadrada real de {num2} (es negativo).")
